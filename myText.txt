@@ -1,0 +1,1 @@
+{"userId":"8","deviceToken":"fugIFAbIWEE:APA91bE99aWl4RumHxU9ZZvXOjaj9RxAShEhJU10DG1zpokLsbBPffwmXDM8Q2jut2xrd9Jcver_hf_Big1ZAi0mVxKsACSkQdz-fV7H-Sz2slqzpQ8ieC6ysfwSiE_4c-D1ZxhO7c02","appVersion":"1.0","androidOS":"7.1.2"}

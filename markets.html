@@ -1,0 +1,72 @@
+<style>
+	.content{
+		padding-top: 70px;
+		background-color: #fafafa;
+		width:100%;
+		height:600px;
+		padding-top: 5px;
+	}
+	.text{
+		color: #5a5757;
+		font-size: 20px;
+		font-weight: 600;
+	}
+	.content table tr td {
+		/* width: 25%; */
+		text-align: center;
+	}
+	.content table {
+		width: 100%;
+	}
+</style>
+<div class="content">
+	
+		<table>
+			<tr>
+				<th>Market Name</th>
+				<th>Site</th>
+				<th>Site Title</th>
+				<th>Action</th>
+			</tr>
+			<tr>
+				<td>Nashville</td>
+				<td>https://justmynashville.com</td>
+				<td>JustMyNashville: Your LOCAL Hub!</td>
+				<td>edit | delete</td>
+			</tr>
+			<tr>
+				<td>Houston</td>
+				<td>https://justmyhouston.com</td>
+				<td>JustMyHouston: Your LOCAL Hub!</td>
+				<td>edit | delete</td>
+			</tr>
+			<tr>
+				<td>Atlanta</td>
+				<td>https://justmyatlanta.com</td>
+				<td>JustMyAtlanta: Your LOCAL Hub!</td>
+				<td>edit | delete</td>
+			</tr>
+			<tr>
+				<td>Memphis</td>
+				<td>https://justmymemphis.com</td>
+				<td>The New JustMyMemphis</td>
+				<td>edit | delete</td>
+			</tr>
+		</table>
+	
+</div>
+<script>
+	function activeEnactive(id, value) {
+		if(value==1){
+			value=0;
+		}
+		else{
+			value=1;
+		}
+		var r = confirm("Do you want to change status ?");
+		if (r == true) {
+		   window.location.assign("<?php echo base_url(); ?>blogcategories/BlogCategoriesmanage/ActiveStatus?inactiveStatusId="+id+"&&statusValue="+value); 
+		}
+
+	}
+</script>

@@ -1,0 +1,272 @@
+<style>
+	.rowcss{
+		display:none;
+	}
+	.main {
+    background: #80808066;
+    padding: 14px 0px 14px 2px;
+    margin: 12px 0px 0px 0px;
+    box-shadow: 4px 4px 6px #808080c4;
+    display: block;
+}
+.main:hover {
+    box-shadow: 0px 2px 16px 4px #808080c4;
+}
+.nav .div-form {
+    width: 75%;
+    border: 1px solid #8080808f;
+    text-align: center;
+    padding: 12px 0px 12px 0px;
+    border-radius: 20px;
+    background: #1fa1dc;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 18px;
+}
+.cont-box {
+    /* border: 1px solid #aaaaaa; */
+    height: auto;
+    margin: 12px 0px 0px 0px;
+    background: #cdcdcd;
+    box-shadow: 4px 4px 6px #808080c4;
+        padding: 60px 0px;
+}
+.cont-box :hover {
+    box-shadow: 0px 2px 16px 4px #808080c4;
+}
+.clt {
+    width: 100%;
+}
+.allign-center {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+.html {
+    font-size: 36px;
+    text-align: center;
+}
+</style>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>  
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<header>
+	<div>
+		<h1 class="html">Add HTML</h1>
+	</div>
+</header>
+<div class="row">
+	<div class="container clt">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<ul class="nav nav-pills nav-stacked main">
+			  <li>
+			  	<div id="div2" class="div-form" ondrop="dropback(event)" ondragover="allowDrop(event)"> 
+				  	<div id="drag1" class="allign-center" draggable="true" ondragstart="drag(event)" >
+				  		<div class="active tabshtml"><span>Content</span>
+				  			<div class="showContent rowcss">
+								<div class="row">
+									
+										<div class="form-group">					
+										  <label for="ContentTitle">Content Title</label>
+										  <input type="text" name="title" class="form-control" id="ContentTitle" placeholder="Enter Title" value="" required>
+										</div>
+									
+								</div>
+								<div class="row">
+									
+										<div class="form-group">					
+										  <label for="ContentText">Content</label>
+										   <textarea name="ContentText" id="editor1" rows="10" cols="80"></textarea>
+										</div>
+									
+								</div>
+							</div>
+						</div>
+				  	</div>
+			  	</div>
+			  </li>
+			  <li>
+			  	<div id="div3" class="div-form"  ondrop="dropback(event)" ondragover="allowDrop(event)"> 
+				  	<div id="drag2" class="allign-center" draggable="true" ondragstart="drag(event)">
+				  		<div class="tabshtml"><span>Content with Skyscraper</span>
+				  			<div class="showContent rowcss">
+					           <div class="row">
+									
+										<div class="form-group">					
+										  <label for="SkyscraperContentTitle">Skyscraper Content Title</label>
+										  <input type="text" name="title" class="form-control" id="SkyscraperContentTitle" placeholder="Enter Title" value="" required>
+										</div>
+									
+								</div>
+								<div class="row">
+									
+										<div class="form-group">					
+										  <label for="SkyscraperContentText">Skyscraper Content</label>
+										    <textarea name="SkyscraperContentText" id="editor2" rows="10" cols="80"></textarea>
+										</div>
+									
+								</div>
+							</div>
+				        </div>
+				  	</div>
+			  	</div>
+			  </li>
+			  <li>
+			  	<div id="div4" class="div-form"  ondrop="dropback(event)" ondragover="allowDrop(event)"> 
+				  	<div id="drag3" class="allign-center" draggable="true" ondragstart="drag(event)">
+				  		<div class="tabshtml"><span>Video</span>
+				  			<div class="showContent rowcss">
+					            <div class="row">
+									
+										<div class="form-group">					
+										  <label for="ContentText">Video Name</label>
+										  <input type="text" name="city" value="" class="form-control" id="City" placeholder="Enter City" required>
+										</div>
+									
+								</div>
+								<div class="row">
+									<div class="col-lg-5 col-sm-5 col-xs-5">
+										<div class="form-group">					
+										  <label for="ContentText">Video Url</label>
+										  <input type="text" name="title" class="form-control" id="SkyscraperContentTitle" placeholder="Enter Title" value="" required>
+										</div>
+									</div>
+									<div class="col-lg-5 col-sm-5 col-xs-5">
+										<div class="form-group">					
+										 <label for="ContentText">Upload Video</label>
+										  <input type="file" name="title" id="SkyscraperContentTitle" value="" required>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									
+										<div class="form-group">					
+										  <label for="SkyscraperContentTitle">Video Details</label>
+										  <textarea name="SkyscraperContentText" id="editor3" rows="10" cols="80"></textarea>
+										</div>
+									
+								</div>
+							</div>
+				        </div>
+				  	</div>
+			  	</div>
+			  </li>
+			  <li>
+			  	<div id="div5" class="div-form" ondrop="dropback(event)" ondragover="allowDrop(event)"> 
+			  		<div id="drag4" class="allign-center" draggable="true" ondragstart="drag(event)">
+			  			<div class="tabshtml"><span>Image</span>
+			  				<div class="showContent rowcss">
+					            <div class="row">
+									
+										<div class="form-group">					
+										  <label for="ContentText">Image Name</label>
+										  <input type="text" name="city" value="" class="form-control" id="City" placeholder="Enter City" required>
+										</div>
+									
+								</div>
+								<div class="row">
+									<div class="col-lg-5 col-sm-5 col-xs-5">
+										<div class="form-group">					
+										  <label for="ContentText">Image Url</label>
+										  <input type="text" name="title" class="form-control" id="SkyscraperContentTitle" placeholder="Enter Title" value="" required>
+										</div>
+									</div>
+									<div class="col-lg-5 col-sm-5 col-xs-5">
+										<div class="form-group">					
+										 <label for="ContentText">Upload Image</label>
+										  <input type="file" name="title" id="SkyscraperContentTitle" value="" required>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									
+										<div class="form-group">					
+										  <label for="SkyscraperContentTitle">Image Details</label>
+										  <textarea name="SkyscraperContentText" id="editor4" rows="10" cols="80"></textarea>
+										</div>
+									
+								</div>
+							</div>
+			        	</div>
+			  		</div>
+		  		</div>
+			  </li>
+			  <li>
+			  	<div id="div6" class="div-form"  ondrop="dropback(event)" ondragover="allowDrop(event)"> 
+			  		<div id="drag5" class="allign-center" draggable="true" ondragstart="drag(event)">
+			  			<div class="tabshtml"><span>Spotlight Text</span>
+			  				<div class="showContent rowcss">
+					             <div class="row">
+									
+										<div class="form-group">					
+										  <label for="SkyscraperContentTitle">Spotlight Text</label>
+										  <textarea name="SkyscraperContentText" id="editor5" rows="10" cols="80"></textarea>
+										</div>
+									
+								</div>
+								<div class="row">
+									
+										<div class="form-group">					
+										  <label for="SkyscraperContentTitle">Credit</label>
+										 <input type="text" name="title" class="form-control" id="SkyscraperContentTitle" placeholder="Enter Title" value="" required>
+										</div>
+									
+								</div>
+							</div>
+			        	</div>
+	  			 	</div>
+  			 	</div>
+		  	</li>
+			</ul>
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+			<div id="div1" class="cont-box" ondrop="drop(event)" ondragover="allowDrop(event)">
+				
+			</div>
+
+		</div>
+	</div><!--end of container-->
+</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ <script src="https://cdn.ckeditor.com/4.5.11/standard/ckeditor.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<script>
+   CKEDITOR.replace( 'editor1' );
+   CKEDITOR.replace( 'editor2' );
+   CKEDITOR.replace( 'editor3' );
+   CKEDITOR.replace( 'editor4' );
+   CKEDITOR.replace( 'editor5' );
+</script>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+  
+  $('#'+data+' .showContent').show();
+  //if($(this).find('#drag1')){
+	//alert(document.getElementById(data));
+	//console.log(document.getElementById(data));
+  //}
+  
+}
+function dropback(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+  $('#'+data+' .showContent').hide();
+}
+</script>

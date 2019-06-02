@@ -1,0 +1,147 @@
+.verticle-icon{margin-left:10px}
+.solutiontxt{display: inline-block; vertical-align: middle;}
+.huge{font-size: 28px;}
+.strip-thumb{box-shadow: 0px 0px 5px #d4cdcd; padding:10px 20px; margin-bottom:10px; margin-right: 10px; width: 48%;}
+.holisol_header {
+  background-image: url(http://52.66.197.252/THS/public/icon-set/world_map_connected.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.central_text{left: 50%; top: 50%; transform: translate(-50%, -50%); position: absolute;}
+.transparent_square{width: 100%; height: auto;}
+.moon_container{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 20%;
+	transform: translate(-50%, -50%);
+}
+
+.moon{
+	/* width: 100%; */
+	height: auto;
+	position: relative;
+	left: 175%;
+}
+
+.moon_container.moon1{transform: translate(-50%, -50%);}
+.moon_container.moon2{transform: translate(-50%, -50%) rotate(45deg);}
+.moon_container.moon3{transform: translate(-50%, -50%) rotate(90deg);}
+.moon_container.moon4{transform: translate(-50%, -50%) rotate(135deg);}
+.moon_container.moon5{transform: translate(-50%, -50%) rotate(180deg);}
+.moon_container.moon6{transform: translate(-50%, -50%) rotate(225deg);}
+.moon_container.moon7{transform: translate(-50%, -50%) rotate(270deg);}
+.moon_container.moon8{transform: translate(-50%, -50%) rotate(315deg);}
+
+.moon.moon2{transform: rotate(-45deg);}
+.moon.moon3{transform: rotate(-90deg);}
+.moon.moon4{transform: rotate(-135deg);}
+.moon.moon5{transform: rotate(-180deg);}
+.moon.moon6{transform: rotate(-225deg);}
+.moon.moon7{transform: rotate(-270deg);}
+.moon.moon8{transform: rotate(-315deg);}
+
+.moving_ship{
+  position: relative;
+  -webkit-animation: mymove 30s infinite ease-in-out; /* Safari 4.0 - 8.0 */
+  animation: mymove 30s infinite ease-in-out;
+  /* animation-iteration-count: 1; */
+  /* margin-bottom:90px; */
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {from {left: -45px;} to {left: 30px; opacity:1}}
+
+@keyframes mymove {from {left: -45px;} to {left: 0px; opacity:1}}
+
+.plan_take_off{
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  padding: 5px;
+  -webkit-animation: takeoff 30s infinite; /* Safari 4.0 - 8.0 */
+  animation: takeoff 30s infinite;
+  /* animation-direction: alternate; */
+  /* animation-iteration-count: 1; */
+}
+/* Safari 4.0 - 8.0 */
+@keyframes takeoff {
+  0%{transform: rotate(-55deg); opacity:1}
+  14%{transform: translate(126px, -210px) rotate(-55deg); opacity:1}
+  15%{transform: translate(126px, -210px) rotate(-55deg); opacity:0}
+  16%{transform: translate(0, 0) rotate(-45deg); opacity:0}
+  
+  17%{transform: rotate(-45deg); opacity:1}
+  28%{transform: translate(126px, -130px) rotate(-45deg); opacity:1}
+  29%{transform: translate(126px, -130px) rotate(-45deg); opacity:0}
+  30%{transform: translate(0, 0) rotate(-30deg); opacity:0}
+  
+  31%{transform: rotate(-30deg); opacity:1}
+  42%{transform: translate(140px, -60px) rotate(-30deg); opacity:1}
+  43%{transform: translate(140px, -60px) rotate(-30deg); opacity:0}
+  44%{transform: translate(0, 0) rotate(10deg); opacity:0}
+  
+  45%{transform: rotate(10deg); opacity:1}
+  56%{transform: translate(155px, 0px) rotate(10deg); opacity:1}
+  57%{transform: translate(155px, 0px) rotate(10deg); opacity:0}
+  58%{transform: translate(0, 0) rotate(30deg); opacity:0}
+  
+  59%{transform: rotate(30deg); opacity:1}
+  70%{transform: translate(155px, 56px) rotate(30deg); opacity:1}
+  71%{transform: translate(155px, 56px) rotate(30deg); opacity:0}
+  72%{transform: translate(0, 0) rotate(60deg); opacity:0}
+  
+  73%{transform: rotate(60deg); opacity:1}
+  84%{transform: translate(140px, 120px) rotate(60deg); opacity:1}
+  85%{transform: translate(140px, 120px) rotate(60deg); opacity:0}
+  86%{transform: translate(0, 0) rotate(60deg); opacity:0}
+  
+  87%{transform: rotate(60deg); opacity:1}
+  98%{transform: translate(130px, 220px) rotate(60deg); opacity:1}
+  99%{transform: translate(130px, 220px) rotate(60deg); opacity:0}
+  100%{transform: translate(0, 0) rotate(0deg); opacity:0}
+}
+
+#element1:before{ background-image:url('http://abymtechnology.in/THS/public/icon-set/truckbg1.png') !important;}
+#element2:before{ background-image:url('http://abymtechnology.in/THS/public/icon-set/truckbg2.png') !important;}
+#element3:before{ background-image:url('http://abymtechnology.in/THS/public/icon-set/truckbg3.png') !important;}
+#element4:before{ background-image:url('http://abymtechnology.in/THS/public/icon-set/truckbg4.png') !important;}
+#element5:before{ background-image:url('http://abymtechnology.in/THS/public/icon-set/truckbg5.png') !important;}
+#element6:before{ background-image:url('http://abymtechnology.in/THS/public/icon-set/truckbg6.png') !important;}
+#element7:before{ background-image:url('http://abymtechnology.in/THS/public/icon-set/truckbg7.png') !important;}
+#element8:before{ background-image:url('http://abymtechnology.in/THS/public/icon-set/truckbg8.png') !important;}
+
+#element1:before, #element2:before, #element3:before, #element4:before, #element5:before, #element6:before, #element7:before, #element8:before{
+	 -webkit-animation: none !important;
+	 animation: none !important;
+	 -webkit-transition: background-image 0.4s ease-in-out;
+	 transition: background-image 0.4s ease-in-out;
+}
+
+#element, #element1, #element2, #element3, #element4, #element5, #element6, #element7, #element8{
+    position: relative;
+	text-align:center;
+}
+
+#element:before, #element1:before, #element2:before, #element3:before, #element4:before, #element5:before, #element6:before, #element7:before, #element8:before{
+    content: "";
+    position: absolute;
+    z-index:1;
+	background-image:url('http://abymtechnology.in/THS/public/icon-set/truck2.png');
+	-webkit-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
+	background-repeat:no-repeat;
+	background-size:100%;
+	top: -70%;
+    left: -70%;
+    right: -70%;
+    bottom: -70%;
+  -webkit-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+}
+
+@-webkit-keyframes spin {0% { -webkit-transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); }}
+@keyframes spin {0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}
